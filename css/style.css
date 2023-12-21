@@ -5,31 +5,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*HEADER-BOOSTRAP*/
 
-#header {
-    background-color: #D1C7BD;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-
-    gap: 50px;
-    flex-wrap: wrap;
-    align-items: center;
-
+.bg-body-tertiary{
+    background-color: #D1C7BD !important; 
 }
+.btn-outline-success {
+    --bs-btn-color: #5E4A41;
+    --bs-btn-border-color: #5E4A41;
+} 
 
-.nav-sup {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.imgLogo {
-    width: 193px;
-    height: 83px;
-
-}
-.buscador{
+.buscador {
     padding: 2px;
     margin: 10px;
     display: inline-block;
@@ -38,7 +25,8 @@
 
 .buscador input {
     padding: 8px;
-    border-radius: 1px solid #5E4A41;;
+    border-radius: 1px solid #5E4A41;
+    ;
     border-radius: 5px;
     margin-right: 10px;
 }
@@ -72,87 +60,12 @@
 
 }
 
-.carrito {
-    text-decoration: none;
+
+/*MAIN-BOOSTRAP*/
+.btn-primary{
+    background-color: #5E4A41 !important;
+    border-color: #5E4A41 !important;
 }
-
-
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-.lista {
-    float: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-.lista a {
-    display: block;
-    color: #333;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 32px;
-    padding: 0 15px;
-}
-
-
-.lista li {
-    position: relative;
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-
-.lista li:hover {
-    background-color: gray;
-}
-
-.lista ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 0;
-    list-style: none;
-}
-
-.lista ul li {
-    float: none;
-    width: 200px;
-}
-
-.lista ul a {
-    line-height: 120%;
-    padding: 10px 15px;
-}
-
-.lista ul ul {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    background-color: #fff;
-}
-
-.lista li:hover>ul {
-    display: block;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.carrusel img {
-    width: 100%;
-}
-
 #mainInicio {
     background-color: #ebebeb;
     min-height: 100vh;
@@ -161,270 +74,39 @@ body {
     justify-content: center;
 
 }
-
-
-.productos {
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    grid-template-areas:
-        "producto1 producto2 producto3"
-        "producto4 producto5 producto6";
-}
-
-.contenedor img {
-    width: 100%;
-    /*dales el 100% de ancho para que ocupen lo que tenga disponible en la columna*/
-    height: 80%;
-}
-
-.producto1 {
-    grid-area: producto1;
-}
-
-
-.tituloProductos {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.tituloProductos h3 {
-    font-size: 25px;
-    padding: 15px;
-}
-
-
-.contenedor {
-    background-color: #fff;
-}
-
-.contenedor div {
-    padding: 15px;
-    text-align: center;
-}
-
-.infoAdicionalBox {
-    background-color: #5E4A41;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 80px);
-    gap: 10px;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: auto;
-
-
-}
-
-.infoAdicionalBox i {
-    color: #fff;
-
-}
-
-.masInfo p {
-    color: aliceblue;
-}
-
-.masInfo h5 {
-    color: aliceblue;
-}
-
-#mainDetail {
-    min-height: 100vh;
-    background-color: #ebebeb;
-}
-
-.carruselDetail {
-    text-align: center;
-    background-color: #5E4A41;
-    padding: 20px;
-}
-
-.carruselDetail p {
-    color: aliceblue
-}
-
-.carruselDetail p i {
-    margin-right: 20px;
-}
-
-.detalle {
-    margin: 10px;
-}
-
-.images {
-    display: inline;
-}
-
-.images img {
-    margin-right: 10px;
-}
-
-.detail {
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-#mainLogin {
-
-    background-color: #fff;
-    min-height: 100vh;
-
-
-}
-
-.contenedorLogin {
-    background-color: #D1C7BD;
-    text-align: center;
-    margin: 20px;
-    width: 50%;
-    border-radius: 20px;
-}
-
-.contenedorLogin h1 {
-    color: #5E4A41;
-    padding: 10px;
-}
-
-.formulario ul li {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-button {
-    width: 100px;
-    background-color: #5E4A41;
-    margin-bottom: 10px;
-    padding: 5px;
-    color: #fff;
-
-}
-
-button a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px;
-}
-
-#mainQuienesomos {
-    min-height: 100vh;
-    background-color: #fff;
-}
-
-.quienesomos {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.quienesomos img {
-    width: 415px;
-    height: 355px;
-}
-
-.quienesomos h1 {
-    font-family: 'Italianno', cursive;
-    font-size: 50px;
-    color: #5E4A41;
-    margin: 10px;
-    display: inline-block;
-    position: absolute;
-
-}
-
-.quienesomos p {
-    margin: 10px;
-    padding-top: 60px;
-    display: inline-block;
-    position: absolute;
-
-}
-
-#mainCarrito {
-    min-height: 100vh;
-    background-color: #fff;
+.cards{
     display: flex;
     flex-wrap: wrap;
-}
+    justify-content: center;
 
-.carritoCon {
-    display: flex;
+}
+.card{
     margin: 30px;
-    padding: 10px;
-    align-items: center;
-    border-bottom: #000 1px solid;
 }
-
-.carritoCon img {
-    width: 100px;
-    height: 150px;
-}
-
-.deteil {
+.detalle{
     display: flex;
-    flex-direction: column;
-    margin-left: 10px;
+    justify-content: center;
 }
-
-/* Agregamos un poco de estilo para los botones de suma y resta */
-.titulo a {
-    color: #000;
-    text-decoration: none;
+.detalle h1{
+    font-size: 25px;
+    color: #5E4A41;
+    padding: 10px 0;
 }
-
-.cantidad {
-    display: flex;
-    align-items: center;
-}
-
-.suma,
-.resta {
-    color: white;
-
+.infoAdicionalBox{
     background-color: #5E4A41;
-    padding: 5px;
-    margin: 0 5px;
-    cursor: pointer;
-    border: none;
-    /* Elimina el borde de los botones */
-    border-radius: 4px;
-    /* Agrega bordes redondeados */
+    color: #fff;
+    height: 100%;
 }
-
-
-
-.price {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.totales {
+.masInfo {
     display: flex;
+    text-align: center;
     flex-direction: column;
-    align-items: flex-end;
-    margin-right: 30px;
+    justify-content: center;
+    padding: 20px; 
 }
 
 
-
-.totales p {
-    display: inline-block;
-}
-
-.desc {
-    border-bottom: #5E4A41 1px solid;
-}
-
-button {
-    margin-top: 10px;
-}
-
-
+/*footer-boostrp*/
 
 #footer {
     margin-top: auto;
@@ -432,67 +114,110 @@ button {
     height: auto;
     background-color: #D1C7BD;
     display: flex;
-    /*va a convertir a sus elementos en linea*/
     justify-content: space-between;
     align-items: center;
-    /* position: relative; */
 }
-
+.imgLogo{
+    width:193px; 
+    height:83px;
+}
 .redes {
     padding: 10px;
-
 }
 
 .redes i {
     font-size: 25px;
-    color: #5E4A41
+    color: #5E4A41;
 }
 
 .redes a {
     margin: 20px;
 }
 
-
-
 .links {
     text-align: center;
+    justify-content: center;
 }
-
 
 .links ul {
     display: flex;
-    /* Para que las listas estén en línea */
     padding: 0;
-    /* Elimina el relleno predeterminado de la lista */
     list-style-type: none;
 }
 
 .links li {
     margin-right: 20px;
-    /* Espacio entre elementos de la lista */
 }
 
 .links a {
-
     text-decoration: none;
     color: #000;
     font-size: 20px;
 }
 
+/*boostrap-detalle del producto*/
+#carruselDetail {
+    text-align: center;
+    background-color: #5E4A41;
+    padding: 20px;
+}
 
-/*MEDIAQUERIES*/
+#carruselDetail p {
+    color: #D1C7BD;
+    font-size: 18px;
+}
 
 
-@media (max-width: 600px) {
-    .productos {
-        grid-template-areas:
-            "producto1 producto2"
-            "producto3 producto4"
-            "producto5 producto6";
-        grid-template-columns: repeat(2, 1fr);
-    }
+.carousel-inner {
+    max-width: 100%;
+}
 
-    #footer {
-        flex-direction: column ;
-    }
+.carousel-item {
+    text-align: center;
+}
+.images img{
+    margin: 20px;
+}
+
+.price{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.cuotas{
+    margin-left: 20px;
+    font-weight: bold;
+    color: #5E4A41;
+}
+.cantidad{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.titulo{
+    margin-left: 20px;
+}
+.boton {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.suma,
+.resta {
+    color: white;
+    background-color: #5E4A41;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+.descripcion p{
+    margin: 20px;
+
+}
+.detail h1{
+    color: #000;
+}
+h3{
+    margin: 20px;
 }
